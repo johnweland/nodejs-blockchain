@@ -1,11 +1,27 @@
 {
     "compilerOptions": {
-        "lib": ["es2020"],
+        "lib": [
+            "es2020"
+        ],
         "module": "CommonJS",
         "target": "es2019",
-        "types": ["node"],
+        "types": [
+            "node"
+        ],
+        "outDir": "dist/",
         "strict": true,
         "esModuleInterop": true,
-        "skipLibCheck": true
-    }
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
