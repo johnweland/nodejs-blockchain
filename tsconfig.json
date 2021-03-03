@@ -3,12 +3,13 @@
         "lib": [
             "es2020"
         ],
-        "module": "CommonJS",
+        "module": "amd",
         "target": "es2019",
         "types": [
             "node"
         ],
         "outDir": "dist/",
+        "outFile": "dist/index.js",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
@@ -18,7 +19,7 @@
         "sourceMap": true
     },
     "include": [
-        "src/**/*"
+        "src/index.ts"
     ],
     "exclude": [
         "node_modules",

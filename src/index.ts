@@ -1,14 +1,11 @@
 import Chain from './chain';
 import Wallet from './wallet';
+import Transaction from './transaction';
+import Block from './block';
 
-
-const user1 = new Wallet();
-const user2 = new Wallet();
-const user3 = new Wallet();
-
-user1.sendMoney(50, user2.publicKey);
-user2.sendMoney(23, user3.publicKey);
-user3.sendMoney(5, user2.publicKey)
-
-console.log(Chain.instance)
-console.log(user1)
+export {
+    Block,
+    Chain,
+    Transaction,
+    Wallet
+}
